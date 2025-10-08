@@ -9,7 +9,7 @@ public class ifCetakKRS9 {
         boolean uktLunas = sc.nextBoolean();
     if (uktLunas); {
         System.out.println("Pembayaran UKT terverifikasi");
-        System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
+        System.out.println("Silakan cetak KRS dan minta tanda tangan DPA:");
     }
     }
     
