@@ -6,10 +6,11 @@ public class Tugas1Jobsheet7 {
         Scanner sc = new Scanner (System.in);
     int hargaTiket = 50000, totalTiketTerjual = 0;
     double totalUangMasuk = 0;
-    String namaPenonton ;
     System.out.println("=== Program Bioskop ===");
         
     while (true) {
+        System.out.println("Masukkan nama Pembeli: ");
+        String namaPembeli = sc.nextLine();
         System.out.print("Masukkan jumlah tiket yang dibeli:");
         int jumlahTiket = sc.nextInt();
         
