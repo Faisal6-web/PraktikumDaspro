@@ -14,6 +14,8 @@ public class Tugas1Jobsheet7 {
         System.out.print("Masukkan jumlah tiket yang dibeli:");
         int jumlahTiket = sc.nextInt();
         
+        sc.nextLine();
+        
         if(jumlahTiket == 0) {
             System.out.println("Transaksi Selesai. Hitung total tiket terjual");
             break;
