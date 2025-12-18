@@ -1,0 +1,55 @@
+case 1:
+    System.out.println("\n--- Tambah Data Pendaftar ---");
+    
+    // 1. Input Nama (Masih Biasa)
+    System.out.print("Nama Mahasiswa: ");
+    String nama = sc.nextLine();
+
+    // ==========================================================
+    // MULAI ZONA VALIDASI NIM (Ganti coding NIM lama dengan ini)
+    // ==========================================================
+    
+    String nim; // Deklarasi variabel
+    boolean isDuplicate; // Siapkan bendera
+
+    while (true) {
+        System.out.print("NIM: ");
+        nim = sc.nextLine(); // Input NIM disini
+
+        isDuplicate = false; // Reset bendera jadi aman
+
+        // Cek ke gudang data (Array)
+        for (int i = 0; i < jumlahData; i++) {
+            if (dataMahasiswa[i][1].equals(nim)) {
+                isDuplicate = true; // Ketahuan kembar!
+                break;
+            }
+        }
+
+        if (isDuplicate) {
+            System.out.println("Error: NIM " + nim + " sudah ada! Coba lagi.");
+            // Dia akan kembali ke atas (System.out.print("NIM: "))
+        } else {
+            break; // Data aman, keluar dari jebakan while
+        }
+    }
+    // ==========================================================
+    // AKHIR ZONA VALIDASI NIM
+    // ==========================================================
+
+    // 2. Lanjut Input Data Lainnya (Coding lama tetap di sini)
+    System.out.print("Judul Skripsi: ");
+    String judul = sc.nextLine();
+    
+    System.out.print("Dosen Pembimbing: ");
+    String dosen = sc.nextLine();
+
+    // ... (Lanjut coding validasi Gelombang & Log Bimbingan) ...
+    // ... (Proses Simpan ke Array) ...
+    
+    break;
+
+
+// Hapus dulu baris ini agar tidak error
+    System.out.print("NIM: ");
+String nim = sc.nextLine();
