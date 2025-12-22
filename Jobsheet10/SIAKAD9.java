@@ -23,7 +23,6 @@ public class SIAKAD9 {
         }
         System.out.println("Nilai rata=rata: " + (totalPerSiswa / jumlahMatkul));
     }
-
     System.out.println("\n======================================");
     System.out.println("Rata=rata Nilai setiap Mata Kuliah: ");
 
